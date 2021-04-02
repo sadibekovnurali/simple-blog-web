@@ -56,7 +56,10 @@ ROOT_URLCONF = 'blog_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'blog/templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'blog/templates'),
+            os.path.join(BASE_DIR, 'blog/static'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
